@@ -27,11 +27,11 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        working-directory: .D:\VS Code repos\WEB\P10.-Dashboard-React
+        working-directory: P10.-Dashboard-React/dist
         run: npm ci || npm install
 
       - name: Build project
-        working-directory: .D:\VS Code repos\WEB\P10.-Dashboard-React
+        working-directory: P10.-Dashboard-React/dist
         run: npm run build
 
       - name: Upload build artifacts
